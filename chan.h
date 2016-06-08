@@ -12,12 +12,12 @@
 class ChanClass{
 private:
 	 int pinI, pinV;
-	 int r1, r2;
+	 float r1, r2, rs, rf;
 	 double ri;
-	 float gV, gI;
+	 float gI;
 
  public:
-	void init(int _pinI, int _pinV, int _r1, int _r2, double _ri, float _gV, float _gI);
+	void init(int _pinI, int _pinV, float _r1, float _r2, double _ri, float _rf, float _rs, float _gI);
 	void init();
 
 	void update();
@@ -26,6 +26,7 @@ private:
 
 	float vOut, iOut;
 	float pOut;
+	float gV;
 
 	int nReading = 100;
 };
